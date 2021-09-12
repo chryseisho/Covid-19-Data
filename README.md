@@ -23,14 +23,16 @@ covid-19 data from 2020-01-22 to 2021-01-31, containing information such as date
 * tidy up the [data type](https://numpy.org/doc/stable/user/basics.types.html) 
 
 ### 2. Creating geodataframe
-* eliminate NA values --- [pd.dropna](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html)
+* eliminate NA values --- [`pd.dropna()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html)
 * set a coordinate system to the df to make it into gdf
-* [gpd.GeoDataFrame](https://geopandas.org/gallery/create_geopandas_from_pandas.html) (df, crs, geometry=)
-* plotting: 
-  * [.plot()](https://towardsdatascience.com/what-are-the-plt-and-ax-in-matplotlib-exactly-d2cf4bf164a9) -- gdf.plot(ax=, color='', alpha=, figsize=(12,10)); 
-  * [plt.xxx()]() -- plt.plot( ); plt.title( ); plt.show( )
+* [`gpd.GeoDataFrame()`](https://geopandas.org/gallery/create_geopandas_from_pandas.html) (df, crs, geometry=)
+* plotting: [understand `plt` and `ax`](https://towardsdatascience.com/what-are-the-plt-and-ax-in-matplotlib-exactly-d2cf4bf164a9)
+  * [`plt.xxx()`]() -- plt.plot( ); plt.title( ); plt.show( )
+  * `.plot(color='', alpha=, figsize=(14,12))`
+  * `.plot(ax=, color='', alpha=)` where `fig, ax = plt.subplots(figsize=(14, 12))`
+  
+### 3. Plotting maps based on diff. themes
 
-### 3. 
 
 
 
